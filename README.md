@@ -42,4 +42,4 @@ https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbita
 # References
 [1] H. Curtis, _Orbital mechanics for engineering students_, Butterworth-Heinemann, 2013.
 
-[2] J. E. Prussing, B. A. Conway, Orbital mechanics, Oxford University Press, 2012.
+[2] J. E. Prussing, B. A. Conway, _Orbital mechanics_, Oxford University Press, 2012.
