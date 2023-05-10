@@ -1,5 +1,5 @@
 # Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements
-
+(Homework from Aerospace Engineering IIA class, Kyushu University)
 # Problem Statement
 ![image](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/c304eb6d-80eb-4c15-8747-1a997c4fe715)
 
