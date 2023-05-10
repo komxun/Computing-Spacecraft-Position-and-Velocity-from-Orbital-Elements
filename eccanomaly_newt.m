@@ -1,5 +1,5 @@
 function E = eccanomaly_newt(E0,M,e)
-% Calculate Eccentricity (E) from Newton's iteration
+% Calculate Eccentric Anomaly (E) from Newton's iteration
 E = E0;
 while (true)
     % Newton's Iteration
