@@ -10,9 +10,10 @@ This problem can be solved with the following knowledge:
 - Solving Kepler's Equation with Newton's Iteration method (**eccanomaly_newt**)
 
 ## Solution Steps
-1. Obtain the semi-major axis ($a$), eccentricity ($e), and angular momentum $(h)$ with **rv2coe**
+1. Obtain the semi-major axis ($a$), eccentricity ($e$), and angular momentum ($h$) with **rv2coe**
+https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/blob/74a83d5946d9d6320cf3412625b9c206f7c30e79/rv2coe.m#L1-L37
 
-2. 
+2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with **eccanomaly_newt**
 
 # Results
 ![Molniya Orbit](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/a3c8cfee-14ae-461b-9494-12cfe1bf4d67)
