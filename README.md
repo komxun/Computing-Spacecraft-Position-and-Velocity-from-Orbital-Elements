@@ -3,6 +3,9 @@
 # Problem Statement
 ![image](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/c304eb6d-80eb-4c15-8747-1a997c4fe715)
 
+# Solutions
+This problem can be solved with the following knowledge:
+- converting Classical Orbital Elements (CoE) to spacecraft's position and velocity vector. Overall, 
 
 # Results
 ![Molniya Orbit](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/a3c8cfee-14ae-461b-9494-12cfe1bf4d67)
