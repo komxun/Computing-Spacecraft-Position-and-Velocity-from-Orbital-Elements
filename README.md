@@ -5,7 +5,14 @@
 
 # Solutions
 This problem can be solved with the following knowledge:
-- converting Classical Orbital Elements (CoE) to spacecraft's position and velocity vector. Overall, 
+- Converting Classical Orbital Elements (CoE) to spacecraft's position and velocity vectors (**rv2coe**)
+- Converting Satellite coordinate system (RSW) to Geocentric Equatorial System (IJK) (**rsw2ijk**)
+- Solving Kepler's Equation with Newton's Iteration method (**eccanomaly_newt**)
+
+## Solution Steps
+1. Obtain the semi-major axis ($a$), eccentricity ($e), and angular momentum $(h)$ with **rv2coe**
+
+2. 
 
 # Results
 ![Molniya Orbit](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/a3c8cfee-14ae-461b-9494-12cfe1bf4d67)
