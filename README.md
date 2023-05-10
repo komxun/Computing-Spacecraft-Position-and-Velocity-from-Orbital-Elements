@@ -15,9 +15,14 @@ https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbita
 
 2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with **eccanomaly_newt**
 3. Calculate True Anomaly ($f$) from the following equation:
-
 $${f = 2\arctan\left(\sqrt{ 1+e \over 1-e} \times \tan{E \over 2}\right)}$$
-4. 
+4. Get position and velocity vector in RSW coordinate frame:
+$${\vec{r}_{rsw} = \left\lbrack \matrix{r \cr 0 \cr 0} \right\rbrack}, {\vec{v}_{rsw} = \left\lbrack \matrix{{h \over a(1-e^2)} e\sin f \cr h/r \cr 0} \right\rbrack} $$
+5. Transform from RSW coordinate to IJK coordinate with **rsw2ijk**
+
+
+
+
 
 # Results
 ![Molniya Orbit](https://github.com/komxun/Computing_Spacecraft_Position_and_Velocity_from_Orbital_Elements/assets/133139057/a3c8cfee-14ae-461b-9494-12cfe1bf4d67)
