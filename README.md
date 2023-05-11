@@ -7,14 +7,14 @@
 This problem can be solved with the following knowledge:
 - Converting Classical Orbital Elements (CoE) to spacecraft's position and velocity vectors (**rv2coe**)
 - Converting Satellite coordinate system (RSW) to Geocentric Equatorial System (IJK) (**rsw2ijk**)
-- Solving Kepler's Equation with Newton's Iteration method (**eccanomaly_newt**)
+- Solving Kepler's Equation with Newton's Iteration method 
 
 # Solution Steps
 1. Obtain the semi-major axis ($a$), eccentricity ($e$), and angular momentum ($h$) from the initial position and velocity vector with **rv2coe.m**
 https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/74a83d5946d9d6320cf3412625b9c206f7c30e79/rv2coe.m#L1-L37
 
-2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with **eccanomaly_newt.m**
-
+2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with Newton's iteration. This has been coded in **eccanomaly_newt.m**
+https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/b3d1e54e31946eaf97c9201e32ea28c986e546be/eccanomaly_newt.m#L1-L15
 
 3. Calculate True Anomaly ($f$) from the following equation:
 $${f = 2\arctan\left(\sqrt{ 1+e \over 1-e} \times \tan{E \over 2}\right)}$$
@@ -23,8 +23,12 @@ $${f = 2\arctan\left(\sqrt{ 1+e \over 1-e} \times \tan{E \over 2}\right)}$$
 $${  { {\vec{r}\_{rsw}} = \left\lbrack \matrix{r \cr 0 \cr 0} \right\rbrack } ,{{\vec{v}\_{rsw}} = \left\lbrack \matrix{{h \over a(1-e^2)} e\sin f \cr h/r \cr 0} \right\rbrack} }$$
 
 
-5. Transform from RSW coordinate to IJK coordinate with **rsw2ijk**
+5. Transform from RSW coordinate to IJK coordinate with directional cosine matrices. This is coded in **rsw2ijk.m**
 
+
+
+
+The main loop for finding spacecraft's position and velocity is shown below:
 https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/82d4dfc1497b5721f96a174d55b7e24e1f60a9ed/main.m#L31-L53
 
 
