@@ -10,10 +10,12 @@ This problem can be solved with the following knowledge:
 - Solving Kepler's Equation with Newton's Iteration method (**eccanomaly_newt**)
 
 # Solution Steps
-1. Obtain the semi-major axis ($a$), eccentricity ($e$), and angular momentum ($h$) with **rv2coe**
+1. Obtain the semi-major axis ($a$), eccentricity ($e$), and angular momentum ($h$) from the initial position and velocity vector with **rv2coe.m**
 https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/74a83d5946d9d6320cf3412625b9c206f7c30e79/rv2coe.m#L1-L37
 
-2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with **eccanomaly_newt**
+2. For each time step, obtain the eccentric anomaly ($E$) from the given mean anomaly ($M$) with **eccanomaly_newt.m**
+
+
 3. Calculate True Anomaly ($f$) from the following equation:
 $${f = 2\arctan\left(\sqrt{ 1+e \over 1-e} \times \tan{E \over 2}\right)}$$
 4. Get position and velocity vector in RSW coordinate frame:
