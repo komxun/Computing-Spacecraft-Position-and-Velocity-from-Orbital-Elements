@@ -25,7 +25,8 @@ $${  { {\vec{r}\_{rsw}} = \left\lbrack \matrix{r \cr 0 \cr 0} \right\rbrack } ,{
 
 
 5. Transform position and velocity vectors from RSW to IJK coordinate with directional cosine matrices. This is coded in **rsw2ijk.m**
-https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/6f00c405c92bf73500bf4c1455a84b7b7bbfa2d4/rsw2ijk.m#L1C1-L21
+
+https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/366f8e27ad22d0ed856c3f24ca73eb2bfcb2ae30/rsw2ijk.m#L1-L21
 
 
 
