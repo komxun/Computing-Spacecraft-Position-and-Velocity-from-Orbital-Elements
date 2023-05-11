@@ -18,12 +18,13 @@ https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbita
 
 3. Calculate True Anomaly ($f$) from the following equation:
 $${f = 2\arctan\left(\sqrt{ 1+e \over 1-e} \times \tan{E \over 2}\right)}$$
-4. Get position and velocity vector in RSW coordinate frame:
+
+4. Position and velocity vector in RSW coordinate frame can be obtained as follow:
 
 $${  { {\vec{r}\_{rsw}} = \left\lbrack \matrix{r \cr 0 \cr 0} \right\rbrack } ,{{\vec{v}\_{rsw}} = \left\lbrack \matrix{{h \over a(1-e^2)} e\sin f \cr h/r \cr 0} \right\rbrack} }$$
 
 
-5. Transform from RSW coordinate to IJK coordinate with directional cosine matrices. This is coded in **rsw2ijk.m**
+5. Transform position and velocity vectors from RSW to IJK coordinate with directional cosine matrices. This is coded in **rsw2ijk.m**
 https://github.com/komxun/Computing-Spacecraft-Position-and-Velocity-from-Orbital-Elements/blob/6f00c405c92bf73500bf4c1455a84b7b7bbfa2d4/rsw2ijk.m#L1C1-L21
 
 
